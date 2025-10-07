@@ -1,9 +1,11 @@
+// src/api/apiAxios.js
 import axios from "axios";
 
 const apiAxios = axios.create({
-  baseURL: "/api", // ahora pasa por el proxy configurado en vue.config.js
+  baseURL: "https://turnoscravero-7d0e.restdb.io/rest",
   headers: {
-    "Content-Type": "application/json"
+    "Content-Type": "application/json",
+    "x-apikey": "9bcb8157f9e319253d13016c32a3273b2cb40"
   }
 });
 
